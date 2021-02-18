@@ -1,0 +1,99 @@
+body{
+    background-color: #fafafa;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+/* CARD */
+.card{
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #00000014;
+}
+.card-body span{
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+/* CORES */
+.typeFire{
+    background-color: #ff000033;
+}
+.typeGrass{
+    background-color: #ffea0033;
+}
+.typeWater{
+    background-color: #00c3ff33;
+}
+.typeBug{
+    background-color: #00ff2633;
+}
+.typeNormal{
+    background-color: #60606033;
+}
+.typePoison{
+    background-color: #c222cb33;
+}
+.typeElectric{
+    background-color: #2e76cd33;
+}
+.typeGround{
+    background-color: #5ec92c33;
+}
+.colorFire{
+    background-color: #ff000020;
+    border: 1px solid #ff000036;
+}
+.colorGrass{
+    background-color: #ffea0020;
+    border: 1px solid #ffea00a3;
+}
+.colorWater{
+    background-color: #00c3ff20;
+    border: 1px solid #00c3ff50;
+}
+.colorBug{
+    background-color: #00ff2620;
+    border: 1px solid #00ff2650;
+}
+.colorNormal{
+    background-color: #60606020;
+    border: 1px solid #60606050;
+}
+.colorPoison{
+    background-color: #c222cb33;
+    border: 1px solid #c222cb50;
+}
+.colorElectric{
+    background-color: #2e76cd33;
+    border: 1px solid #2e76cd50;
+}
+.colorGround{
+    background-color: #5ec92c33;
+    border: 1px solid #5ec92c50;
+}
+
+/* FONTES */
+.title h1, .title p{
+    text-align: left;
+}
+h4 {
+    font-size: 22px;
+    font-weight: 800
+}
+h5 {
+    font-size: 16px;
+    font-weight: 800;
+    text-align: left;
+}
+
+/* BTN */
+.btn-view{
+    padding: 0px 11px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: #fff;
+}
