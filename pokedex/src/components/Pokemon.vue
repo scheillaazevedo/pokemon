@@ -65,24 +65,32 @@
 import axios from "axios";
 
 export default {
-  async created() {
-    /* axios.get(this.url).then((resposta) => {
+  // async created() {
+  created() {
+    axios.get(this.url).then((resposta) => {
       this.infoPokemon.type = resposta.data.types[0].type.name;
       this.infoPokemon.img = resposta.data.sprites.front_default;
       this.games = resposta.data.game_indices;
       this.identificador = resposta.data.id;
       this.location = resposta.data.location_area_encounters;
-    }); */
-    try {
+
+      return axios.get(this.location);
+    }).then(locationResponse => {
+      this.encounters = locationResponse.data;
+    });
+    /* try {
       const resposta = await axios.get(this.url);
       this.infoPokemon.type = resposta.data.types[0].type.name;
       this.infoPokemon.img = resposta.data.sprites.front_default;
       this.games = resposta.data.game_indices;
       this.identificador = resposta.data.id;
       this.location = resposta.data.location_area_encounters;
+
+      const encounters = await axios.get(this.location);
+      console.log(encounters.data);
     } catch (e) {
       console.error("Erro ao trazer Pokemons", e);
-    }
+    } */
   },
   data() {
     return {
